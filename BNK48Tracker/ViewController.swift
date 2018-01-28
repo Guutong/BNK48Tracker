@@ -8,18 +8,34 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
 
+    // MARK: - Properties
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    // MARK: - ViewController func
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.nameTextField.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - UITextFieldDelegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // hide keyboard
+        self.nameTextField.resignFirstResponder()
+        return true;
     }
-
-
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.nameLabel.text = textField.text
+    }
+    
+    // MARK: - Actions
+    @IBAction func setLabel(_ sender: Any) {
+        self.nameLabel.text = self.nameTextField.text
+    }
+    @IBAction func setImageFromLibrary(_ sender: Any) {
+    }
 }
 
