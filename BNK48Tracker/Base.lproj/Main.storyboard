@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CtE-g5-tKB">
-                                <rect key="frame" x="36" y="40" width="303" height="96.5"/>
+                                <rect key="frame" x="36" y="40" width="303" height="97"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Android" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2u-8b-OyG">
                                         <rect key="frame" x="0.0" y="0.0" width="303" height="20.5"/>
@@ -32,13 +32,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="This is text field" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y8R-r8-piK">
-                                        <rect key="frame" x="0.0" y="28.5" width="303" height="30"/>
+                                        <rect key="frame" x="0.0" y="28.5" width="303" height="30.5"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52v-AU-CQs">
-                                        <rect key="frame" x="0.0" y="66.5" width="303" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52v-AU-CQs">
+                                        <rect key="frame" x="0.0" y="67" width="303" height="30"/>
                                         <state key="normal" title="Click"/>
                                         <connections>
                                             <action selector="setLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gcx-wB-0uM"/>
@@ -47,7 +47,7 @@
                                 </subviews>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Android_robot" translatesAutoresizingMaskIntoConstraints="NO" id="mOZ-xr-JzR">
-                                <rect key="frame" x="12.5" y="156.5" width="350" height="350"/>
+                                <rect key="frame" x="13" y="157" width="350" height="350"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="JkQ-a4-BkS"/>
@@ -57,14 +57,31 @@
                                     <outletCollection property="gestureRecognizers" destination="zAA-EU-Btf" appends="YES" id="t46-XZ-AHv"/>
                                 </connections>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5xe-M0-zqh" customClass="RatingControl" customModule="BNK48Tracker" customModuleProvider="target">
+                                <rect key="frame" x="20" y="527" width="335" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="B5X-ZP-5mc">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                    </stackView>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sizeCount">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="uuu-gS-ITX" firstAttribute="top" secondItem="5xe-M0-zqh" secondAttribute="bottom" constant="90" id="2FY-Tq-XX8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CtE-g5-tKB" secondAttribute="trailing" constant="20" id="CdY-1g-5Iy"/>
+                            <constraint firstItem="5xe-M0-zqh" firstAttribute="top" secondItem="mOZ-xr-JzR" secondAttribute="bottom" constant="20.5" id="OrA-Uj-JAl"/>
                             <constraint firstItem="mOZ-xr-JzR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UlO-1r-KVb"/>
+                            <constraint firstItem="5xe-M0-zqh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="VWl-fZ-u8L"/>
                             <constraint firstItem="mOZ-xr-JzR" firstAttribute="top" secondItem="CtE-g5-tKB" secondAttribute="bottom" constant="20" id="W5b-ad-nEv"/>
                             <constraint firstItem="CtE-g5-tKB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="dEm-mA-DrH"/>
                             <constraint firstItem="CtE-g5-tKB" firstAttribute="top" secondItem="nGk-pW-HAg" secondAttribute="bottom" constant="20" id="mAJ-L7-FXa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5xe-M0-zqh" secondAttribute="trailing" constant="4" id="vve-aw-Xt0"/>
                         </constraints>
                     </view>
                     <connections>

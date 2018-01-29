@@ -14,6 +14,9 @@
 		DB503160201D71980046D68E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB50315E201D71980046D68E /* LaunchScreen.storyboard */; };
 		DB50316B201D71980046D68E /* BNK48TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB50316A201D71980046D68E /* BNK48TrackerTests.swift */; };
 		DB503176201D71980046D68E /* BNK48TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB503175201D71980046D68E /* BNK48TrackerUITests.swift */; };
+		DB503184201DBBA30046D68E /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB503183201DBBA30046D68E /* RatingControl.swift */; };
+		DB503186201DD62D0046D68E /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB503185201DD62D0046D68E /* Meal.swift */; };
+		DB503188201DD7E40046D68E /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB503187201DD7E40046D68E /* FoodTrackerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		DB503171201D71980046D68E /* BNK48TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BNK48TrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB503175201D71980046D68E /* BNK48TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNK48TrackerUITests.swift; sourceTree = "<group>"; };
 		DB503177201D71980046D68E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB503183201DBBA30046D68E /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		DB503185201DD62D0046D68E /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		DB503187201DD7E40046D68E /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,8 @@
 				DB50315C201D71980046D68E /* Assets.xcassets */,
 				DB50315E201D71980046D68E /* LaunchScreen.storyboard */,
 				DB503161201D71980046D68E /* Info.plist */,
+				DB503183201DBBA30046D68E /* RatingControl.swift */,
+				DB503185201DD62D0046D68E /* Meal.swift */,
 			);
 			path = BNK48Tracker;
 			sourceTree = "<group>";
@@ -112,6 +120,7 @@
 			children = (
 				DB50316A201D71980046D68E /* BNK48TrackerTests.swift */,
 				DB50316C201D71980046D68E /* Info.plist */,
+				DB503187201DD7E40046D68E /* FoodTrackerTests.swift */,
 			);
 			path = BNK48TrackerTests;
 			sourceTree = "<group>";
@@ -259,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB503186201DD62D0046D68E /* Meal.swift in Sources */,
 				DB503158201D71980046D68E /* ViewController.swift in Sources */,
+				DB503184201DBBA30046D68E /* RatingControl.swift in Sources */,
 				DB503156201D71980046D68E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB503188201DD7E40046D68E /* FoodTrackerTests.swift in Sources */,
 				DB50316B201D71980046D68E /* BNK48TrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
